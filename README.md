@@ -1,6 +1,6 @@
-# JavaProject
+# BetterCryptoBureau
 
-This is a Full Stack application = (front end, back end, db) 
+This is a Full Stack application = front end, back end, db 
 
 ## Requirements
 ### Inception - Vision Statement and User stories 
