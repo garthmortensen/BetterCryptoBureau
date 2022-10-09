@@ -4,25 +4,17 @@
 
 In Backlog, create a task, and move it as you progress.
 
-Decide on a framework = **Spring**
+We will be using **Spring/Spring Boot** framework.
 
-Considering our user stories, list out all the services that will be needed. E.g.:
+Given our user stories, we've generated the following list of services:
 
-| CLASS NAME | FUNCTION                                                     |
-| ---------- | ------------------------------------------------------------ |
-| Clerk      | Persistent storage - database storage and operations.        |
-| Artist     | Display of data to users (View from MVC)                     |
-| Controller | Controller from MVC architectural pattern.                   |
-| Bouncer    | Security - for user authentication                           |
-| Calculator | Performs complex calculations - calculate cryptocurrency reputation |
-
-Not all these, or even any, are needed. We'll probably have more. Expect the list to change.
-
-We'll use the framework in the narrations created for our user story refinement, and can be updated as the project continues.
-
-## TODO
-
-Learn about MVC pattern. https://www.javatpoint.com/spring-mvc-tutorial
-
-
+| CLASS NAME  | FUNCTION                                                     |
+| ----------- | ------------------------------------------------------------ |
+| Clerk       | Persistent storage - database storage and operations. Sort lists. |
+| Artist      | Display data to users (View from MVC), filter data(?).       |
+| Controller  | Controller from MVC architectural pattern.                   |
+| Bouncer     | Security - for user authentication.                          |
+| Calculator  | Performs complex calculations - calculate cryptocurrency reputation. |
+| Presenter   | Get list of available cryptocurrencies, get their historical data, get project information, search for cryptocurrencies, purchase links, reputation score. |
+| Contributor | Allow founders and cryptocurrency experts to set currency information, set other content. |
 
