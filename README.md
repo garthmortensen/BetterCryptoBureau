@@ -20,7 +20,7 @@ This is a Full Stack application = front end, back end, db
 
 ### Elaboration Part 1 - Framework and Services
 
-*2022.08.11, 50 pts = 12.5 %*
+*2022.09.11, 50 pts = 12.5 %*
 
 In Backlog, create a task, and move it as you progress.
 
