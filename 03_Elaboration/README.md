@@ -174,7 +174,7 @@ Artist --> User: Here is the info you wanted.
 
 ```
 
-![user story  Historical Search](./images/User_story%20_historical.png)
+![user story  Historical Search](./images/historical.png)
 
 ### Price history
 
@@ -197,7 +197,7 @@ Clerk --> Controller: Here is the info of the requested project.
 @enduml
 ```
 
-[user story  Price History](./images/User_Story%20_Price%20_history.png)
+[user story  Price History](./images/Price.png)
 
 ### Purchase links
 
@@ -218,7 +218,7 @@ Artist --> User: Here is the info you wanted.
 @enduml
 ```
 
-[user story  Exchanges](./images/user_Story_Exchanges.png)
+[user story  Exchanges](./images/Exchanges.png)
 
 ### Reputation index system
 
@@ -228,12 +228,17 @@ Story points = 2
 
 ```diagram
 @startuml
-User -> Controller: 
-Controller -> 
-...
+User -> Controller: I want  a ranking or grading system that shows me how reputable a coin is 
+Controller -> Artist: Ask user what project user wants to see ranking for .
+Artist --> User: What project are you searching for?
+User -> Controller: It's a project named X
+Controller -> Clerk: Find  the project named X 
+Clerk --> Controller: provides the ranking/ grading for that project currently 
+Controller -> Artist: Display this info to the user.
+Artist --> User: Here is the info you wanted.
 @enduml
 ```
 
-![user story x](./images/filename.png)
+![user story Ranking](./images/Ranking.png)
 
 
