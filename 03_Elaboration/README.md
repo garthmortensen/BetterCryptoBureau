@@ -19,6 +19,10 @@
 | Calculator | Performs calculations, such as calculate cryptocurrency reputation. |
 | Presenter  | Get list of available cryptocurrencies, get their historical data, get project information, search for cryptocurrencies, purchase links, reputation score. |
 
+### Current kanban state
+
+![kanban](./images/kanban_current_state.png)
+
 ## User stories
 
 Images created at https://www.plantuml.com/plantuml/uml/
