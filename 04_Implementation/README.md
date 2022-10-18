@@ -16,6 +16,10 @@ In Kanban, attach to each user story the UML diagram.
 
 Once code is complete, move user story to Testing.
 
+### Current kanban state
+
+![kanban](./images/kanban_current_state.png)
+
 ## Sequence diagram to UML
 
 Images created at https://www.plantuml.com/plantuml/uml/
