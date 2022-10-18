@@ -6,7 +6,7 @@
 
 For each refined story in Implementing:
 
-1. Draw a rough uml diagram per narration.
+1. Draw a rough UML diagram per narration.
 
 2. Code the UML
 
@@ -195,13 +195,18 @@ Story points = 3
 
 ```diagram
 @startuml
-User -> Controller: 
-Controller -> 
-...
+User -> Controller: I want to search a project historical data like price and overall perfomance .
+Controller -> Artist: Ask user what project user wants to see .
+Artist --> User: What project are you searching for?
+User -> Controller: It's a project named vechain 
+Controller -> Clerk: Find  the project named vechain 
+Clerk --> Controller: Here is the info of the requested project.
+Controller -> Artist: Display this info to the user.
+Artist --> User: Here is the info you wanted.
 @enduml
 ```
 
-![user story x](./images/filename.png)
+![user story historical](G:\My Drive\github\BetterCryptoBureau\03_Elaboration\images\historical.png)
 
 #### UML diagram
 
@@ -217,13 +222,20 @@ Story points = 3
 
 ```diagram
 @startuml
-User -> Controller: 
-Controller -> 
-...
+User -> Controller:  I want to see  performance of a project so I can  get better picture of its volatility and overall performance in relation to the overall market.
+Controller -> Artist: Ask user what project user wants to see .
+Artist --> User: What project are you searching for?
+User -> Controller: It's a project named X
+Controller -> Clerk: Find  the project named X 
+Clerk --> Controller: Here is the info of the requested project.
+Controller -> Artist: Display this info to the user.
+Artist --> User: Here is the info you wanted.
+User -> Controller :Can you rate this project price flactuation compared to overall market
+Clerk --> Controller: Here is the info of the requested project.
 @enduml
 ```
 
-![user story x](./images/filename.png)
+![user story price](G:\My Drive\github\BetterCryptoBureau\03_Elaboration\images\Price.png)
 
 #### UML diagram
 
@@ -239,13 +251,18 @@ Story points = 1
 
 ```diagram
 @startuml
-User -> Controller: 
-Controller -> 
-...
+User -> Controller: I want to see the list of exchanges I can purchase cryptocurrency coins/shares 
+Controller -> Artist: Ask user what project user wants to see .
+Artist --> User: What project are you searching for?
+User -> Controller: It's a project named X
+Controller -> Clerk: Find  the project named X 
+Clerk --> Controller: Here is the list of exchanges you can purchase project X
+Controller -> Artist: Display this info to the user.
+Artist --> User: Here is the info you wanted.
 @enduml
 ```
 
-![user story x](./images/filename.png)
+![user story exchanges](G:\My Drive\github\BetterCryptoBureau\03_Elaboration\images\Exchanges.png)
 
 #### UML diagram
 
@@ -261,11 +278,20 @@ Story points = 2
 
 ```diagram
 @startuml
-User -> Controller: 
-Controller -> 
-...
+User -> Controller: I want a ranking or grading system that shows me how reputable a coin is 
+Controller -> Artist: Ask user what project user wants to see ranking for .
+Artist --> User: What project are you searching for?
+User -> Controller: It's a project named X
+Controller -> Clerk: Find  the project named X 
+Clerk --> Controller: provides the ranking/ grading for that project currently 
+Controller -> Artist: Display this info to the user.
+Artist --> User: Here is the info you wanted.
 @enduml
 ```
 
-![user story x](./images/filename.png)
+![user story ranking](G:\My Drive\github\BetterCryptoBureau\03_Elaboration\images\Ranking.png)
+
+#### UML diagram
+
+place diagram here
 
