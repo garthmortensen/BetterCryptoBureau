@@ -210,7 +210,7 @@ Artist --> User: Here is the info you wanted.
 @enduml
 ```
 
-![user story historical](.\images\historical.png)
+![user story historical](./images/historical.png)
 
 #### UML diagram
 
@@ -239,7 +239,7 @@ Clerk --> Controller: Here is the info of the requested project.
 @enduml
 ```
 
-![user story price](.\images\Price.png)
+![user story price](./images/Price.png)
 
 #### UML diagram
 
@@ -266,7 +266,7 @@ Artist --> User: Here is the info you wanted.
 @enduml
 ```
 
-![user story exchanges](.\images\Exchanges.png)
+![user story exchanges](./images/Exchanges.png)
 
 #### UML diagram
 
@@ -293,7 +293,7 @@ Artist --> User: Here is the info you wanted.
 @enduml
 ```
 
-![user story ranking](.\images\Ranking.png)
+![user story ranking](./images/Ranking.png)
 
 #### UML diagram
 
