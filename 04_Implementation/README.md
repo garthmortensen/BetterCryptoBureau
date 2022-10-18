@@ -1,25 +1,22 @@
 # BetterCryptoBureau
 
-## Elaboration Part 2 - Refine user stories, sequence diagram
+## Implementation - UML and code it
 
-*2022.10.25, 100 pts = 25%*
+*2022.12.06, 100 pts = 25%*
 
-1. Given Elaboration Part 1 classes, create a play/narration/sequence diagram for each user story.
+For each refined story in Implementing:
 
-2. When starting a user story, move it to Refining. Max one story/person in Refining. 
+1. Draw a rough uml diagram per narration.
 
-3. When play/narration is complete, move user story to Implementing. Attach to the story the narration.
+2. Code the UML
 
-| CLASS NAME | FUNCTION                                                     |
-| ---------- | ------------------------------------------------------------ |
-| Controller | Controller from MVC architectural pattern. Receives and directs user requests. |
-| Clerk      | Persistent storage, performing database storage and operations (sort lists). |
-| Artist     | Display data to users (View from MVC).                       |
-| Bouncer    | Security, for user authentication.                           |
-| Calculator | Performs calculations, such as calculate cryptocurrency reputation. |
-| Presenter  | Get list of available cryptocurrencies, get their historical data, get project information, search for cryptocurrencies, purchase links, reputation score. |
+3. Push to Github.
 
-## User stories
+In Kanban, attach to each user story the UML diagram.
+
+Once code is complete, move user story to Testing.
+
+## Sequence diagram to UML
 
 Images created at https://www.plantuml.com/plantuml/uml/
 
@@ -29,7 +26,7 @@ Story points = 4
 
 *As a security-aware browser, I want to login with a username and password, so that I can feel safe.*
 
-**Following is sourced/adapted from Michael Dorin's user story 8:**
+#### Sequence diagram
 
 ```diagram
 @startuml
@@ -46,11 +43,17 @@ Artist --> User: Here is the main menu
 
 ![user story Authentication](./images/user_story_authentication.png)
 
+#### UML diagram
+
+place diagram here
+
 ### See project info
 
 Story points = 2
 
 *As an investor, I want to see who project founders are, so that I can easily research their backgrounds and credentials.*
+
+#### Sequence diagram
 
 ```diagram
 @startuml
@@ -67,11 +70,17 @@ Artist --> User: Here is the info you wanted.
 
 ![user story see project info.png](./images/user_story_see_project_info.png)
 
+#### UML diagram
+
+place diagram here
+
 ### See listing
 
 Story points = 1
 
 *As an explorer, I want to see a list of all documented cryptocurrencies, so that I can explore and find new ones.*
+
+#### Sequence diagram
 
 ```diagram
 @startuml
@@ -85,11 +94,17 @@ Artist --> User: Here is the info you wanted.
 
 ![user story see listing](./images/user_story_see_listing.png)
 
+#### UML diagram
+
+place diagram here
+
 ### Sort list
 
 Story points = 2
 
 *As an inquisitive investor, I want to sort the cryptocurrency list by reputation, price, and other metrics, so that I can discover new ones.*
+
+#### Sequence diagram
 
 ```diagram
 @startuml
@@ -106,11 +121,17 @@ Artist --> User: Here is the info you wanted.
 
 ![user story sort list](./images/user_story_see_listing.png)
 
+#### UML diagram
+
+place diagram here
+
 ### User provided content
 
 Story points = 4
 
 *As an cryptocurrency expert, I want to contribute information to cryptocurrency projects, so that I can improve my reputation.*
+
+#### Sequence diagram
 
 ```diagram
 @startuml
@@ -133,11 +154,17 @@ Artist --> User: We have saved the info and awarded you 10 XP.
 
 ![user story user provided content](./images/user_story_user_provided_content.png)
 
+#### UML diagram
+
+place diagram here
+
 ### Search by name and tag
 
 Story points = 3
 
 *As a user, I want to be able to search for specific cryptocurrency projects by name and tags, so that I can easily find what I'm looking for.*
+
+#### Sequence diagram
 
 ```diagram
 @startuml
@@ -154,26 +181,31 @@ Artist --> User: Here is the info you wanted.
 
 ![user story search](./images/user_story_search.png)
 
+#### UML diagram
+
+place diagram here
+
 ### View content history
 
 Story points = 3
 
 *As an investor suspicious of Wall Street Bets, I want to access historical/archive/vintage information, so that I can see if users are contributing falsified information to pump up a project.*
 
+#### Sequence diagram
+
 ```diagram
 @startuml
-User -> Controller: I want to search a project historical data like price and overall perfomance .
-Controller -> Artist: Ask user what project user wants to see .
-Artist --> User: What project are you searching for?
-User -> Controller: It's a project named vechain 
-Controller -> Clerk: Find  the project named vechain 
-Clerk --> Controller: Here is the info of the requested project.
-Controller -> Artist: Display this info to the user.
-Artist --> User: Here is the info you wanted.
+User -> Controller: 
+Controller -> 
+...
 @enduml
 ```
 
-![user story historical](./images/historical.png)
+![user story x](./images/filename.png)
+
+#### UML diagram
+
+place diagram here
 
 ### Price history
 
@@ -181,22 +213,21 @@ Story points = 3
 
 *As a risk averse investor, I want to see price time series, so that I can tell how volatile a cryptocurrency's price is. I'd also like to see price/initial coin offering price, to know how over- or under-valued the coin is, relative to first listing.*
 
+#### Sequence diagram
+
 ```diagram
 @startuml
-User -> Controller:  I want to see  performance of a project so I can  get better picture of its volatility and overall performance in relation to the overall market.
-Controller -> Artist: Ask user what project user wants to see .
-Artist --> User: What project are you searching for?
-User -> Controller: It's a project named X
-Controller -> Clerk: Find  the project named X 
-Clerk --> Controller: Here is the info of the requested project.
-Controller -> Artist: Display this info to the user.
-Artist --> User: Here is the info you wanted.
-User -> Controller :Can you rate this project price flactuation compared to overall market
-Clerk --> Controller: Here is the info of the requested project.
+User -> Controller: 
+Controller -> 
+...
 @enduml
 ```
 
-![user story price](./images/Price.png)
+![user story x](./images/filename.png)
+
+#### UML diagram
+
+place diagram here
 
 ### Purchase links
 
@@ -204,20 +235,21 @@ Story points = 1
 
 *As an eager investor, I want links to external coin markets, so that I know I'm going to purchase the correct coin.*
 
+#### Sequence diagram
+
 ```diagram
 @startuml
-User -> Controller: I want to see the list of exchanges I can purchase cryptocurrency coins/shares 
-Controller -> Artist: Ask user what project user wants to see .
-Artist --> User: What project are you searching for?
-User -> Controller: It's a project named X
-Controller -> Clerk: Find  the project named X 
-Clerk --> Controller: Here is the list of exchanges you can purchase project X
-Controller -> Artist: Display this info to the user.
-Artist --> User: Here is the info you wanted.
+User -> Controller: 
+Controller -> 
+...
 @enduml
 ```
 
-![user story exchanges](./images/Exchanges.png)
+![user story x](./images/filename.png)
+
+#### UML diagram
+
+place diagram here
 
 ### Reputation index system
 
@@ -225,18 +257,15 @@ Story points = 2
 
 *As an easily overwhelmed investor, I want to see a index number/letter system that tells me with a quick glance how reputable a coin is.*
 
+#### Sequence diagram
+
 ```diagram
 @startuml
-User -> Controller: I want a ranking or grading system that shows me how reputable a coin is 
-Controller -> Artist: Ask user what project user wants to see ranking for .
-Artist --> User: What project are you searching for?
-User -> Controller: It's a project named X
-Controller -> Clerk: Find  the project named X 
-Clerk --> Controller: provides the ranking/ grading for that project currently 
-Controller -> Artist: Display this info to the user.
-Artist --> User: Here is the info you wanted.
+User -> Controller: 
+Controller -> 
+...
 @enduml
 ```
 
-![user story ranking](./images/Ranking.png)
+![user story x](./images/filename.png)
 
