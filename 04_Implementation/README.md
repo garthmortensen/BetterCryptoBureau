@@ -77,7 +77,7 @@ class Model {
 @enduml
 ```
 
-![plant_uml](/images/uml_model.png)
+![plant_uml](./images/uml_model.png)
 
 ### View
 
