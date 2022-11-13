@@ -26,13 +26,36 @@ Images created at https://www.plantuml.com/plantuml/uml/
 
 ## UML
 
+### User
+
+User class:
+
+```plantuml
+@startuml
+class User
+{
+-String fullName
+-int phoneNumber
+-String email
+-String userName
+-String password
+
++createLogin()
++login()
+}
+@enduml
+```
+
+![plant_uml_user](./images/uml_user.png)
+
 ### Model
 
 Model view:
 
 ```plantuml
 @startuml
-class Model {
+class Model 
+{
  -String name
  -String symbol
  -float decimals
@@ -77,12 +100,29 @@ class Model {
 @enduml
 ```
 
-![plant_uml](./images/uml_model.png)
+![plant_uml_model](./images/uml_model.png)
+
+### Controller
+
+Controller is just a router. These modules tend to be very short. Wouldn't they just be methods?
+
+```plantuml
+@startuml
+class Controller
+{
+}
+@enduml
+```
 
 ### View
 
 Template Engines create these dynamic websites, so do they even have code associated to them?
 
-### Controller
+```plantuml
+@startuml
+class View
+{
+}
+@enduml
+```
 
-Controller is just a router. These modules tend to be very short. Wouldn't they just be methods?

@@ -1,10 +1,10 @@
 # BetterCryptoBureau
 
-## Elaboration Part 2 - Refine user stories, sequence diagram
+## Elaboration Part 2 - Refine user stories, sequence plantuml
 
 *2022.10.25, 100 pts = 25%*
 
-1. Given Elaboration Part 1 classes, create a play/narration/sequence diagram for each user story.
+1. Given Elaboration Part 1 classes, create a play/narration/sequence plantuml for each user story.
 
 2. When starting a user story, move it to Refining. Max one story/person in Refining. 
 
@@ -16,7 +16,7 @@
 | Model         | Persistent storage, performing database storage and operations (sort lists). |
 | View          | Display data to users (View from MVC).                       |
 | Authenticator | Security, for user authentication.                           |
-| Calculator    | Performs calculations, such as calculate cryptocurrency reputation. |
+| Model         | Performs calculations, such as calculate cryptocurrency reputation. |
 | Presenter     | Get list of available cryptocurrencies, get their historical data, get project information, search for cryptocurrencies, purchase links, reputation score. |
 
 ### Current kanban state
@@ -35,7 +35,7 @@ Story points = 4
 
 **Following is sourced/adapted from Michael Dorin's user story 8:**
 
-```diagram
+```plantuml
 @startuml
 User -> Controller: I would like to contribute content
 Controller -> View: Tell User to Log In
@@ -56,7 +56,7 @@ Story points = 2
 
 *As an investor, I want to see who project founders are, so that I can easily research their backgrounds and credentials.*
 
-```diagram
+```plantuml
 @startuml
 User -> Controller: I would like to see project info.
 Controller -> View: Ask user what project they want to see info about.
@@ -92,7 +92,7 @@ Story points = 1
 
 *As an explorer, I want to see a list of all documented cryptocurrencies, so that I can explore and find new ones.*
 
-```diagram
+```plantuml
 @startuml
 User -> Controller: I would like to see a a listing of all projects.
 Controller -> Model: Find us a listing of all projects.
@@ -110,7 +110,7 @@ Story points = 2
 
 *As an inquisitive investor, I want to sort the cryptocurrency list by reputation, price, and other metrics, so that I can discover new ones.*
 
-```diagram
+```plantuml
 @startuml
 User -> Controller: I would like to sort the list of projects by a specific field.
 Controller -> View: Ask user what they want to order by.
@@ -131,7 +131,7 @@ Story points = 4
 
 *As an cryptocurrency expert, I want to contribute information to cryptocurrency projects, so that I can improve my reputation.*
 
-```diagram
+```plantuml
 @startuml
 User -> Controller: I would like to submit info about a project, so that I can earn xp points.
 Controller -> View: Ask user what project they want to contribute info about.
@@ -144,7 +144,7 @@ Controller -> View: Ask user what specific blockchain info they want to contribu
 View -> User: What specific blockchain info do you want to contribute?
 User -> Controller: This project runs on the Ethereum blockchain.
 Controller -> Model: Store this user provided information.
-Controller -> Calculator: Give the user 10 XP points for contributing info about blockchain.
+Controller -> Model: Give the user 10 XP points for contributing info about blockchain.
 Controller -> View: Tell the user we have saved the info and awarded them 10 XP.
 View -> User: We have saved the info and awarded you 10 XP.
 @enduml
@@ -158,7 +158,7 @@ Story points = 3
 
 *As a user, I want to be able to search for specific cryptocurrency projects by name and tags, so that I can easily find what I'm looking for.*
 
-```diagram
+```plantuml
 @startuml
 User -> Controller: I want to search for a project I've heard about.
 Controller -> View: Ask user what project they want to search for.
@@ -179,7 +179,7 @@ Story points = 3
 
 *As an investor suspicious of Wall Street Bets, I want to access historical/archive/vintage information, so that I can see if users are contributing falsified information to pump up a project.*
 
-```diagram
+```plantuml
 @startuml
 User -> Controller: I want to search a project historical data like price and overall perfomance .
 Controller -> View: Ask user what project user wants to see .
@@ -200,7 +200,7 @@ Story points = 3
 
 *As a risk averse investor, I want to see price time series, so that I can tell how volatile a cryptocurrency's price is. I'd also like to see price/initial coin offering price, to know how over- or under-valued the coin is, relative to first listing.*
 
-```diagram
+```plantuml
 @startuml
 User -> Controller:  I want to see  performance of a project so I can  get better picture of its volatility and overall performance in relation to the overall market.
 Controller -> View: Ask user what project user wants to see .
@@ -223,7 +223,7 @@ Story points = 1
 
 *As an eager investor, I want links to external coin markets, so that I know I'm going to purchase the correct coin.*
 
-```diagram
+```plantuml
 @startuml
 User -> Controller: I want to see the list of exchanges I can purchase cryptocurrency coins/shares 
 Controller -> View: Ask user what project user wants to see .
@@ -244,7 +244,7 @@ Story points = 2
 
 *As an easily overwhelmed investor, I want to see a index number/letter system that tells me with a quick glance how reputable a coin is.*
 
-```diagram
+```plantuml
 @startuml
 User -> Controller: I want a ranking or grading system that shows me how reputable a coin is 
 Controller -> View: Ask user what project user wants to see ranking for .
@@ -258,4 +258,3 @@ View -> User: Here is the info you wanted.
 ```
 
 ![user story ranking](./images/Ranking.png)
-
