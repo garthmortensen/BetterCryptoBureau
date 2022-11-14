@@ -110,9 +110,12 @@ Controller is just a router. These modules tend to be very short. Wouldn't they 
 @startuml
 class Controller
 {
+-routeRequest()
 }
 @enduml
 ```
+
+![plant_uml_controller](./images/uml_controller.png)
 
 ### View
 
@@ -120,9 +123,17 @@ Template Engines create these dynamic websites, so do they even have code associ
 
 ```plantuml
 @startuml
-class View
+class View 
 {
+askUsertoLogin()
+askUserwhatproject()
+askUserOrderby()
+askUserContribute()
+askUserCateogry()
+tellUserInfoSaved()
+presentResult()
 }
 @enduml
 ```
 
+![plant_uml_view](./images/uml_view.png)
