@@ -22,6 +22,8 @@
 
 6. Move user story to Done.
 
+[TOC]
+
 ### User Stories and Acceptance Criteria
 
 #### 1. Base functionality
